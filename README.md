@@ -74,14 +74,17 @@ Then press control + c means end of input
 
 Anwser to prompt `[Whether to add Return to the end]`, `Y` is YES, `N` is NO, `C` is CANCEL  
 Anwser `Y` mean add a end-of-line symbol at the end
+
 |![](sample2.png)|
 | ---- |
 <br>
 Copy the output string, although this is the format used for Arduino keyboard, Yet so simple to modify the format to that required for printf by yourself
+
 |![](sample3.png)|
 | ---- |
 
 Put all stuff together, then do convert again
+
 |![](sample4.png)|
 | ---- |
 
