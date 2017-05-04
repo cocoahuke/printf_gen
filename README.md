@@ -35,20 +35,20 @@ static const char _A[ ] PROGMEM = {'H', 'e', 'y', '\n'};
 ><strong>5050 bytes (17%) - 153 bytes (5%)</strong>
 ><strong></strong>
 
->void my_print_flashStr(const >__FlashStringHelper *buf)
->{
->&nbsp;&nbsp;&nbsp;&nbsp;PGM_P p = reinterpret_cast<PGM_P>(buf);
->&nbsp;&nbsp;&nbsp;&nbsp;size_t n = 0;
->&nbsp;&nbsp;&nbsp;&nbsp;while (1) {
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned char c = pgm_read_byte(p++);
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (c == 0) break;
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Keyboard.write(c)) n++;
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else break;
->&nbsp;&nbsp;&nbsp;&nbsp;}
->}
->...
->my_print_flashStr(F("Hey\n"));
->...
+>void my_print_flashStr(const >__FlashStringHelper *buf)  
+>{  
+>&nbsp;&nbsp;&nbsp;&nbsp;PGM_P p = reinterpret_cast<PGM_P>(buf);  
+>&nbsp;&nbsp;&nbsp;&nbsp;size_t n = 0;  
+>&nbsp;&nbsp;&nbsp;&nbsp;while (1) {  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;unsigned char c = pgm_read_byte(p++);  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (c == 0) break;  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (Keyboard.write(c)) n++;  
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else break;  
+>&nbsp;&nbsp;&nbsp;&nbsp;}  
+>}  
+>...  
+>my_print_flashStr(F("Hey\n"));  
+>...  
 ><strong>5006 bytes (17%) - 153 bytes (5%)</strong>
 ><strong>Save some bytes regardless of how long the bytes of content is, Here is 44 bytes</strong>
 
