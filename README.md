@@ -18,13 +18,13 @@ Here we list several ways that call Keyboard.print(), which is sends a keystroke
 Only listed methods of store data in flash memory instead of SRAM. For a large amount of fixed strings, storing the SRAM is not a good choice
 
 
->At begin (I have other code that uses memory)
+>At begin (I have other code that uses memory)  
 ><strong>4960 bytes (17%) - 153 bytes (5%)</strong>
 
->Keyboard.write('H');
->Keyboard.write('e');ss
->Keyboard.write('y');
->Keyboard.write('\n');
+>Keyboard.write('H');  
+>Keyboard.write('e');  
+>Keyboard.write('y');  
+>Keyboard.write('\n');  
 ><strong>5000 bytes (17%) - 153 bytes (5%)</strong>  
 ><strong>Although this is the smallest now, this is because there is no codes to handle long strings. Once more than a few bytes like 5 letters the shortcomings will be obvious, each letter took 10 bytes. other methods each letter only took 1 bytes</strong>
 
