@@ -58,7 +58,7 @@ static const char _A[ ] PROGMEM = {'H', 'e', 'y', '\n'};
 
 Call `println`s storage occupied is larger than `print`, because it contains more instructions, so use the same function as much as possible.  
 For print the same content, although the call is the same function, but call once that include all required string could less storage occupied, more efficient than calls many time with separate content.
-Besides, The compiler will not optimize the string stored in Flash, means multiple same strings will occupy the same space, you need to save value to a `const __FlashStringHelper *` type variable, then use it for save memory
+Besides, The compiler will not optimize the string stored in Flash, means multiple same strings will occupy the same space, you need to save value to a `const __FlashStringHelper *` type variable, then repeated references to it for save storage space
 
 ## Use example
 For example, we need to print a simple function that include code output an ascii art font, use on ATMEGA32U4
@@ -91,8 +91,8 @@ Anwser `Y` mean add a end-of-line symbol at the end
 |![](sample4.png)|
 | ---- |
 
-The last output is what you need :)
-Just reminded: put as many strings as possible together
+The last output is what you need :)  
+Remind again: put as many strings as possible together for saving storage space
 
 ## Usage
 
