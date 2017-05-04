@@ -63,14 +63,14 @@ Besides, The compiler will not optimize the string stored in Flash, means multip
 ## Use example
 For example, we need to print a simple function that include code output an ascii art font, use on ATMEGA32U4
 
-`1.` FIRST THING, copy structure of the ascii art text from website like [this one](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
+**1.** FIRST THING, copy structure of the ascii art text from website like [this one](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 |![](sample1.png) |
 | ---- |
 
 <br>
 
-`2.` Run `printf_gen`, paste it, press Enter  
+**2.** Run `printf_gen`, paste it, press Enter  
 Then press control + c means end of input
 
 Anwser to prompt `[Whether to add Return to the end]`, `Y` is YES, `N` is NO, `C` is CANCEL  
@@ -80,12 +80,13 @@ Anwser `Y` mean add a end-of-line symbol at the end
 | ---- |
 <br>
 
-`3.` Copy the output string, although this is the format used for Arduino keyboard, Yet so simple to modify the format to that required for printf by yourself
+**3.** Copy the output string, although this is the format used for Arduino keyboard, Yet so simple to modify the format to that required for printf by yourself
 
 |![](sample3.png)|
 | ---- |
+<br>
 
-`4.` Put all stuff together, then do convert again
+**4.** Put all stuff together, then do convert again
 
 |![](sample4.png)|
 | ---- |
@@ -101,4 +102,17 @@ Usage:	[-n <variable name>]	specifi name of variable
 	[-b <file path>]	read the file in binary and output it
 	[-a <file path>]	read the file in ASCII and output it
 	[-y]			output in char array instead in one string
+```
+
+## How to use
+
+**Download**
+```bash
+git clone https://github.com/cocoahuke/printf_gen.git && cd printf_gen
+```
+
+**Compile and install** to /usr/local/bin/
+```bash
+make
+make install
 ```
