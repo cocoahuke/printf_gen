@@ -53,7 +53,7 @@ static const char _A[ ] PROGMEM = {'H', 'e', 'y', '\n'};
 ><strong>Save some bytes regardless of how long the bytes of content is, Here is 44 bytes</strong>
 
 
->Keyboard.println(F("Hey"));
+>Keyboard.println(F("Hey"));  
 ><strong>5140 bytes (17%) - 153 bytes (5%)</strong>
 
 Call `println`s storage occupied is larger than `print`, because it contains more instructions, so use the same function as much as possible.  
@@ -65,7 +65,8 @@ For example, we need to print a simple function that include code output an asci
 
 FIRST THING, copy structure of the ascii art text from website like [this one](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
-![](sample1.png)
+![](sample1.png?classes=shadow)
+
 <br>
 Run `printf_gen`, paste it, press Enter  
 Then press control + c means end of input
