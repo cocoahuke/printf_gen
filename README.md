@@ -65,8 +65,7 @@ For example, we need to print a simple function that include code output an asci
 
 FIRST THING, copy structure of the ascii art text from website like [this one](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
-![](sample1.png?classes=shadow)
-
+![](sample1.png)
 <br>
 Run `printf_gen`, paste it, press Enter  
 Then press control + c means end of input
