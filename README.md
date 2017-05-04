@@ -68,30 +68,22 @@ FIRST THING, copy structure of the ascii art text from website like [this one](h
 |![](sample1.png) |
 | ---- |
 
-<style>
-div.shadow {
--webkit-box-shadow: 3px 3px 3px; -moz-box-shadow: 3px 3px 3px;
-box-shadow: 3px 3px 3px;
-}
-</style>
-
-<div class="shadow">
-<img src="sample1.png">
-</div>
-
 <br>
 Run `printf_gen`, paste it, press Enter  
 Then press control + c means end of input
 
 Anwser to prompt `[Whether to add Return to the end]`, `Y` is YES, `N` is NO, `C` is CANCEL  
 Anwser `Y` mean add a end-of-line symbol at the end
-![](sample2.png)
+|![](sample2.png)|
+| ---- |
 <br>
 Copy the output string, although this is the format used for Arduino keyboard, Yet so simple to modify the format to that required for printf by yourself
-![](sample3.png)
+|![](sample3.png)|
+| ---- |
 
 Put all stuff together, then do convert again
-![](sample4.png)
+|![](sample4.png)|
+| ---- |
 
 The last output is what you need :)
 Just reminded: put as many strings as possible together
