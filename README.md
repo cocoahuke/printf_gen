@@ -68,6 +68,17 @@ FIRST THING, copy structure of the ascii art text from website like [this one](h
 |![](sample1.png) |
 | ---- |
 
+<style>
+div.shadow {
+-webkit-box-shadow: 3px 3px 3px; -moz-box-shadow: 3px 3px 3px;
+box-shadow: 3px 3px 3px;
+}
+</style>
+
+<div class="shadow">
+<img src="sample1.png">
+</div>
+
 <br>
 Run `printf_gen`, paste it, press Enter  
 Then press control + c means end of input
