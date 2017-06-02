@@ -49,7 +49,7 @@ static const char _A[ ] PROGMEM = {'H', 'e', 'y', '\n'};
 >...  
 >my_print_flashStr(F("Hey\n"));  
 >...  
-><strong>5006 bytes (17%) - 153 bytes (5%)</strong>
+><strong>5006 bytes (17%) - 153 bytes (5%)</strong>  
 ><strong>Save some bytes regardless of how long the bytes of content is, Here is 44 bytes</strong>
 
 
